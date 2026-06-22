@@ -57,10 +57,10 @@ python main.py
 
 # Example questions to try
 
-"Suggest a high-protein vegetarian dinner" → triggers recipe search (RAG)
-"How many calories are in 150g of paneer?" → triggers nutrition lookup
-"I'm 70kg, 170cm, 28, male, trying to lose weight — what's my target calorie intake?" → triggers the body metrics calculator
-"What's a quick breakfast idea?" → recipe search again, different query intent
+1. "Suggest a high-protein vegetarian dinner" → triggers recipe search (RAG)
+2. "How many calories are in 150g of paneer?" → triggers nutrition lookup
+3. "I'm 70kg, 170cm, 28, male, trying to lose weight — what's my target calorie intake?" → triggers the body metrics calculator
+4. "What's a quick breakfast idea?" → recipe search again, different query intent
 
 ## Notes / honest limitations
 
@@ -72,7 +72,7 @@ python main.py
 
 #  What I'd build next
 
-Persist the vector store instead of rebuilding it each run
-Add a pantry-tracking tool so recipe suggestions prioritize what's already on hand
-Swap the hardcoded nutrition lookup for a real food database API
+1. Persist the vector store instead of rebuilding it each run
+2. Add a pantry-tracking tool so recipe suggestions prioritize what's already on hand
+3. Swap the hardcoded nutrition lookup for a real food database API
 
