@@ -5,8 +5,8 @@ from langchain_openai import OpenAIEmbeddings
 # Resolve the path relative to the project root, not the current working
 # directory -- so this works whether you run `python main.py` from the repo
 # root or from inside src/.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RECIPES_PATH = os.path.join(BASE_DIR, "data", "recipes.txt")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+RECIPES_PATH = os.path.join(BASE_DIR, "recipes.txt")
 
 
 def get_recipe_retriever():
