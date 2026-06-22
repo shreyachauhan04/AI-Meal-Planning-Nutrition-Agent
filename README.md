@@ -13,17 +13,14 @@ Most "AI chatbot" demos just wrap an LLM in a chat window. This project goes a s
 3. Body metrics calculator — computes BMI and a personalized calorie target (BMR/TDEE via the Mifflin-St Jeor equation) from basic stats and a goal.
 4. Agentic tool routing - the LLM reads each question and picks the right tool (or none) on its own, using LangChain's tool-calling.
 
-# How it works
+## How it works
 
-User question
-      │
-      ▼
-   LLM Agent ── reads the question and decides what's needed
-      │
-      ├── Recipe/meal idea? ──────► RAG search over recipes.txt (Chroma + OpenAI embeddings)
-      ├── Nutrition numbers? ─────► Ingredient lookup tool (structured calculation)
-      ├── Calorie/BMI targets? ───► Body metrics tool (Mifflin-St Jeor formula)
-      └── General question? ──────► Answered directly, no tool needed
+1. The user asks a question
+2. The LLM agent reads it and decides which tool fits
+3. **Recipe or meal idea** → searches `recipes.txt` via RAG (Chroma + OpenAI embeddings)
+4. **Nutrition numbers** → calls the ingredient lookup tool
+5. **Calorie/BMI target** → calls the body metrics tool
+6. **General question** → answered directly, no tool needed
 
       
 ## Architecture
