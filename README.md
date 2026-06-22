@@ -46,12 +46,3 @@ Try asking:
 - Uses the older LangChain `AgentExecutor` pattern; LangGraph's `create_react_agent`
   is the newer recommended approach if extending this further.
 
-## Resume bullets (once you've run it and tried a few questions)
-
-> **AI Nutrition & Meal Planning Agent**
-> - Built a tool-calling agent (LangChain) that routes between RAG-based recipe
->   retrieval and structured nutrition/BMR calculation tools based on query intent
-> - Implemented a RAG pipeline over a custom recipe corpus using OpenAI embeddings
->   and a Chroma vector store
-> - Designed clear tool-use boundaries: semantic search for unstructured recipe
->   text vs. deterministic lookups for nutrition math
